@@ -1,0 +1,12 @@
+---
+:backends:
+  - yaml
+
+:logger: console
+
+:hierarchy:
+  - '%{::environment}/%{::hostname}'
+  - '%{::environment}/global'
+
+:yaml:
+  :datadir: '/tmp/hiera_data/'
